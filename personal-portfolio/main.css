@@ -206,6 +206,17 @@ header .logo a {
   text-align: center;
   transform: translateY(-2.1rem);
 }
+.intro-content h5 {
+  color: #cc005f;
+  font-family: "poppins-bold", sans-serif;
+  font-weight: 800;
+  font-size: 2.3rem;
+  line-height: 1.565;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
 .intro-content h1 {
   color: #ffffff;
   font-family: "poppins-medium", sans-serif;
@@ -218,24 +229,16 @@ header .logo a {
   margin-right: auto;
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
-.intro-content h5 {
-  color: #cc005f;
-  font-family: "poppins-bold", sans-serif;
-  font-size: 2.3rem;
-  line-height: 1.565;
-  margin-bottom: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.3rem;
-  text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-}
 .intro-content .intro-position {
-  font-family: "lora-regular", serif;
+  font-family: "lora", serif;
+  font-weight: 400;
   font-size: 1.7rem;
   line-height: 2.4rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   color: #ffffff;
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 5rem;
 }
 
 .intro-content .button {
@@ -247,8 +250,13 @@ header .logo a {
   padding: 2rem 3.5rem 2rem 3rem;
   margin-top: 0.6rem;
   font-size: 1.3rem;
+  font-family: "poppins", sans-serif;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.15rem;
+}
+.intro-content .button i {
+  padding-left: 1.5rem;
 }
 .intro-content .button:hover,
 .intro-content .button:focus {
