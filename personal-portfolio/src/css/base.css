@@ -17,7 +17,8 @@ body {
   margin: 0;
   padding: 0;
   background: #151515;
-  font-family: "lora-regular", serif;
+  font-family: lora, serif;
+  font-weight: 400;
   font-size: 1.7rem;
   line-height: 3rem;
   color: #6e6e6e;
@@ -65,7 +66,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "poppins-semibold", sans-serif;
+  font-family: poppins, sans-serif;
+  font-weight: bolder;
   color: #313131;
   font-style: normal;
   text-rendering: optimizeLegibility;
@@ -75,7 +77,8 @@ h3 h4 {
   margin-bottom: 1.8rem;
 }
 h5 h6 {
-  font-family: "poppins-bold";
+  font-family: poppins;
+  font-weight: bold;
   margin-bottom: 1.2rem;
 }
 h1 {
@@ -177,7 +180,8 @@ h1 {
 a.button,
 button {
   display: inline-block;
-  font-family: "poppins-bold", sans-serif;
+  font-family: poppins;
+  font-weight: bold;
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
@@ -266,7 +270,8 @@ button.stroke:hover,
   position: absolute;
   left: 0;
   top: -3rem;
-  font-family: "poppins-bold", sans-serif;
+  font-family: poppins;
+  font-weight: bold;
   color: #313131;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -283,7 +288,8 @@ button.stroke:hover,
   right: 0;
   top: -3.6rem;
   display: block;
-  font-family: "poppins-regular", sans-serif;
+  font-family: poppins;
+  font-weight: 500;
   color: white;
   font-size: 1.1rem;
   line-height: 1;
@@ -361,60 +367,4 @@ button.stroke:hover,
 }
 .skill-bars li .percent100 {
   width: 100%;
-}
-
-/* intro styles *********************************** */
-
-.grey-section {
-  background: #ebebeb;
-}
-.grey-section p.lead {
-  color: #7d7d7d;
-}
-.section-intro {
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  margin-bottom: 3.6rem;
-  position: relative;
-}
-.section-intro h1 {
-  font-family: "poppins-semibold", serif;
-  font-size: 3.6rem;
-  color: #313131;
-  line-height: 1.25;
-  margin-bottom: 1.2rem;
-}
-.section-intro h5 {
-  color: #ff0077;
-  font-size: 1.6rem;
-  line-height: 1.875;
-  margin-bottom: 0.3rem;
-  letter-spacing: 0.4rem;
-}
-
-/* * responsive:********************************** */
-
-@media only screen and (max-width: 768px) {
-  .section-intro {
-    max-width: 650px;
-  }
-  .section-intro h1 {
-    font-size: 3rem;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .section-intro h1 {
-    font-size: 2.6rem;
-  }
-  .section-intro h5 {
-    font-size: 1.5rem;
-    letter-spacing: 0.3rem;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .section-intro h1 {
-    font-size: 2.4rem;
-  }
 }

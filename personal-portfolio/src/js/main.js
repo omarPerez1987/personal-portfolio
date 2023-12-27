@@ -5,25 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("preloader").style.display = "none";
   });
 
-  // FitText Settings
-  setTimeout(function () {
-    const introHeading = document
-      .getElementById("intro")
-      .getElementsByTagName("h1")[0];
-    fitText(introHeading, 42, 84);
-  }, 100);
-
-  function fitText(element, minSize, maxSize) {
-    const fontSize = Math.max(
-      Math.min(
-        element.clientWidth / (10 * (element.textContent.length / 2)),
-        parseFloat(maxSize)
-      ),
-      parseFloat(minSize)
-    );
-    element.style.fontSize = fontSize + "px";
-  }
-
   // Navigation Menu
   const toggleButton = document.querySelector(".menu-toggle");
   const nav = document.querySelector(".main-navigation");
