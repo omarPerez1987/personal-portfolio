@@ -411,17 +411,19 @@ header .logo a {
   margin-top: 4.2rem;
   margin-right: -30px;
   margin-left: -30px;
+  display: flex;
+  align-items: center;
 }
 .intro-info img {
-  height: 9rem;
-  width: 9rem;
+  object-fit: cover;
+  height: 11rem;
+  width: 11rem;
   border-radius: 50%;
-  margin: 0.9rem 0 0 0;
   float: left;
 }
 .intro-info .lead {
   text-align: left;
-  padding-left: 13rem;
+  padding-left: 8rem;
 }
 
 .about-content {
@@ -486,17 +488,16 @@ header .logo a {
 */
 @media only screen and (max-width: 1024px) {
   .intro-info {
-    margin-right: 0;
-    margin-left: 0;
+    margin: 0 auto;
+    width: 90%;
   }
 }
 @media only screen and (max-width: 768px) {
   .intro-info img {
-    height: 7.8rem;
-    width: 7.8rem;
+    margin-left: 2rem;
   }
   .intro-info .lead {
-    padding-left: 11rem;
+    padding-left: 6rem;
   }
   .about-content h3 {
     text-align: center;
@@ -517,10 +518,10 @@ header .logo a {
   .intro-info {
     text-align: center;
     margin-top: 3rem;
+    flex-direction: column;
   }
   .intro-info img {
-    height: 6.6rem;
-    width: 6.6rem;
+    margin: 0;
     float: none;
     display: inline-block;
   }
@@ -690,7 +691,6 @@ header .logo a {
     font-size: 2.4rem;
   }
 }
-
 
 @media only screen and (max-width: 1024px) {
   #resume .timeline-header {
