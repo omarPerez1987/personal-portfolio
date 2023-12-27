@@ -75,19 +75,33 @@ document.addEventListener("DOMContentLoaded", function () {
     return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
   }
 
+  // Swiper services
+  const swiperServices = new Swiper("#swiper-services", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      1300: {
+        slidesPerView: 3,
+      },
+      900: {
+        slidesPerView: 2,
+      },
+    },
+  });
+
   // Back to top
-  const pxShow = 300;
+  const pxShow = 500;
   const goTopButton = document.getElementById("go-top");
 
   window.addEventListener("scroll", function () {
-    if (
-      !document.getElementById("header-search").classList.contains("is-visible")
-    ) {
-      if (window.scrollY >= pxShow) {
-        goTopButton.style.display = "block";
-      } else {
-        goTopButton.style.display = "none";
-      }
+    if (window.scrollY >= pxShow) {
+      goTopButton.style.display = "block";
+    } else {
+      goTopButton.style.display = "none";
     }
   });
 });

@@ -5,6 +5,10 @@
     <title>Portfolio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,8 +16,8 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="./src/css/base.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
     <link rel="icon" type="image/png" href="favicon.png" />
   </head>
 
@@ -21,7 +25,7 @@
     <!-- header 
    ================================================== -->
     <header>
-      <div class="row">
+      <div>
         <div class="top-bar">
           <a class="menu-toggle" href="#"><span>Menu</span></a>
 
@@ -47,13 +51,10 @@
               <li>
                 <a class="smoothscroll" href="#contact" title="">Contact</a>
               </li>
-              <li><a href="styles.html" title="">Style Demo</a></li>
             </ul>
           </nav>
         </div>
-        <!-- /top-bar -->
       </div>
-      <!-- /row -->
     </header>
     <!-- /header -->
 
@@ -61,10 +62,11 @@
    ================================================== -->
     <section id="intro">
       <div class="intro-overlay"></div>
-
+      
+      <!--intro-content -->
       <div class="intro-content">
-        <div class="row">
-          <div class="col-twelve">
+        <div>
+          <div>
             <h5>Hello, World.</h5>
             <h1>I'm Omar Pérez.</h1>
 
@@ -79,8 +81,8 @@
           </div>
         </div>
       </div>
-      <!-- /intro-content -->
 
+      <!-- /intro-social -->
       <ul class="intro-social">
         <li>
           <a href="#"><i class="fa fa-facebook"></i></a>
@@ -98,15 +100,14 @@
           <a href="#"><i class="fa fa-instagram"></i></a>
         </li>
       </ul>
-      <!-- /intro-social -->
     </section>
     <!-- /intro -->
 
     <!-- about section
    ================================================== -->
     <section id="about">
-      <div class="row section-intro">
-        <div class="col-twelve">
+      <div class="section-intro">
+        <div>
           <h5>About</h5>
           <h1>Let me introduce myself.</h1>
 
@@ -122,10 +123,9 @@
           </div>
         </div>
       </div>
-      <!-- /section-intro -->
 
-      <div class="row about-content">
-        <div class="col-six tab-full">
+      <div class="about-content">
+        <div>
           <h3>Profile</h3>
           <p>
             Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse
@@ -155,10 +155,9 @@
               <span>me@kardswebsite.com</span>
             </li>
           </ul>
-          <!-- /info-list -->
         </div>
 
-        <div class="col-six tab-full">
+        <div>
           <h3>Skills</h3>
           <p>
             Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse
@@ -192,8 +191,8 @@
         </div>
       </div>
 
-      <div class="row button-section">
-        <div class="col-twelve">
+      <div class="button-section">
+        <div>
           <a href="#contact" title="Hire Me" class="button stroke smoothscroll"
             >Hire Me</a
           >
@@ -208,8 +207,8 @@
     <!-- resume Section
    ================================================== -->
     <section id="resume" class="grey-section">
-      <div class="row section-intro">
-        <div class="col-twelve">
+      <div class="section-intro">
+        <div>
           <h5>Resume</h5>
           <h1>More of my credentials.</h1>
 
@@ -222,13 +221,13 @@
       </div>
       <!-- /section-intro-->
 
-      <div class="row resume-timeline">
-        <div class="col-twelve resume-header">
+      <div class="resume-timeline">
+        <div class="resume-header">
           <h2>Work Experience</h2>
         </div>
         <!-- /resume-header -->
 
-        <div class="col-twelve">
+        <div>
           <div class="timeline-wrap">
             <div class="timeline-block">
               <div class="timeline-ico">
@@ -301,17 +300,17 @@
           </div>
           <!-- /timeline-wrap -->
         </div>
-        <!-- /col-twelve -->
+        <!-- / -->
       </div>
       <!-- /resume-timeline -->
 
-      <div class="row resume-timeline">
-        <div class="col-twelve resume-header">
+      <div class=" resume-timeline">
+        <div class=" resume-header">
           <h2>Education</h2>
         </div>
         <!-- /resume-header -->
 
-        <div class="col-twelve">
+        <div>
           <div class="timeline-wrap">
             <div class="timeline-block">
               <div class="timeline-ico">
@@ -387,9 +386,9 @@
 
     <!-- Portfolio Section
    ================================================== -->
-    <section class="portfolio">
-      <div class="row section-intro">
-        <div class="col-twelve">
+    <section id="portfolio">
+      <div class=" section-intro">
+        <div>
           <h5>Portfolio</h5>
           <h1>Check Out Some of My Works.</h1>
 
@@ -404,7 +403,7 @@
       <article class="portfolio-container">
         <div class="portfolio-content">
           <!-- portfolio-wrapper -->
-          <div class="bgrid folio-item">
+          <div class="folio-item">
             <div class="item-wrap">
               <img src="images/portfolio/liberty.jpg" alt="Liberty" />
               <a href="#modal-01" class="overlay">
@@ -420,7 +419,7 @@
 
           <!-- /folio-item -->
 
-          <div class="bgrid folio-item">
+          <div class="folio-item">
             <div class="item-wrap">
               <img
                 class="img-beetle"
@@ -440,7 +439,7 @@
 
           <!-- /folio-item -->
 
-          <div class="bgrid folio-item">
+          <div class=" folio-item">
             <div class="item-wrap">
               <img src="images/portfolio/salad.jpg" alt="Salad" />
               <a href="#modal-06" class="overlay">
@@ -457,7 +456,7 @@
 
         <!-- /folio-item -->
         <div class="portfolio-content">
-          <div class="bgrid folio-item">
+          <div class="folio-item">
             <div class="item-wrap">
               <img src="images/portfolio/shutterbug.jpg" alt="Shutterbug" />
               <a href="#modal-02" class="overlay">
@@ -472,7 +471,7 @@
           </div>
           <!-- /folio-item -->
 
-          <div class="bgrid folio-item">
+          <div class="folio-item">
             <div class="item-wrap">
               <img src="images/portfolio/clouds.jpg" alt="Clouds" />
               <a href="#modal-03" class="overlay">
@@ -488,7 +487,7 @@
 
           <!-- /folio-item -->
 
-          <div class="bgrid folio-item">
+          <div class="folio-item">
             <div class="item-wrap">
               <img src="images/portfolio/lighthouse.jpg" alt="Lighthouse" />
               <a href="#modal-05" class="overlay">
@@ -510,8 +509,8 @@
     <section id="services">
       <div class="overlay"></div>
 
-      <div class="row section-intro">
-        <div class="col-twelve">
+      <div class="section-intro">
+        <div>
           <h5>Services</h5>
           <h1>What Can I Do For You?</h1>
 
@@ -524,10 +523,10 @@
       </div>
       <!-- /section-intro -->
 
-      <div class="row services-content">
-        <div id="owl-slider" class="owl-carousel services-list">
-          <div class="service">
-            <span class="icon"><i class="icon-earth"></i></span>
+      <div id="swiper-services" class="swiper services-content">
+        <div class="swiper-wrapper services-list">
+          <div class="swiper-slide service">
+            <span class="icon"><i class="fa-solid fa-earth-europe"></i></span>
 
             <div class="service-content">
               <h3>Webdesign</h3>
@@ -543,7 +542,7 @@
           </div>
           <!-- /service -->
 
-          <div class="service">
+          <div class="swiper-slide service">
             <span class="icon"><i class="icon-window"></i></span>
 
             <div class="service-content">
@@ -560,7 +559,7 @@
           </div>
           <!-- /service -->
 
-          <div class="service">
+          <div class="swiper-slide service">
             <span class="icon"><i class="icon-paint-brush"></i></span>
 
             <div class="service-content">
@@ -577,7 +576,7 @@
           </div>
           <!-- /service -->
 
-          <div class="service">
+          <div class="swiper-slide service">
             <span class="icon"><i class="icon-toggles"></i></span>
 
             <div class="service-content">
@@ -594,7 +593,7 @@
           </div>
           <!-- /service -->
 
-          <div class="service">
+          <div class="swiper-slide service">
             <span class="icon"><i class="icon-image"></i></span>
 
             <div class="service-content">
@@ -611,7 +610,7 @@
           </div>
           <!-- /service -->
 
-          <div class="service">
+          <div class="swiper-slide service">
             <span class="icon"><i class="icon-chat"></i></span>
 
             <div class="service-content">
@@ -628,88 +627,84 @@
           </div>
           <!-- /service -->
         </div>
-        <!-- /services-list -->
+        <div class="swiper-pagination"></div>
       </div>
-      <!-- /services-content -->
     </section>
-    <!-- /services -->
 
     <!-- stats Section
    ================================================== -->
     <section class="stats" class="count-up">
+      <div class="stat stat-item">
+        <div class="icon-part">
+          <i class="fa-solid fa-laptop"></i>
+        </div>
 
-            <div class="bgrid stat stat-item">
-              <div class="icon-part">
-                <i class="fa-solid fa-laptop"></i>
-              </div>
+        <h3 class="stat-count">1500</h3>
 
-              <h3 class="stat-count">1500</h3>
+        <h5 class="stat-title">Projects Completed</h5>
+      </div>
+      <!-- /stat -->
 
-              <h5 class="stat-title">Projects Completed</h5>
-            </div>
-            <!-- /stat -->
+      <div class="stat stat-item">
+        <div class="icon-part">
+          <i class="fa-solid fa-people-group"></i>
+        </div>
 
-            <div class="bgrid stat stat-item">
-              <div class="icon-part">
-                <i class="fa-solid fa-people-group"></i>
-              </div>
+        <h3 class="stat-count">900</h3>
 
-              <h3 class="stat-count">900</h3>
+        <h5 class="stat-title">Happy Clients</h5>
+      </div>
+      <!-- /stat -->
 
-              <h5 class="stat-title">Happy Clients</h5>
-            </div>
-            <!-- /stat -->
+      <div class="stat stat-item">
+        <div class="icon-part">
+          <i class="fa-solid fa-medal"></i>
+        </div>
 
-            <div class="bgrid stat stat-item">
-              <div class="icon-part">
-                <i class="fa-solid fa-medal"></i>
-              </div>
+        <h3 class="stat-count">200</h3>
 
-              <h3 class="stat-count">200</h3>
+        <h5 class="stat-title">Awards Received</h5>
+      </div>
+      <!-- /stat -->
 
-              <h5 class="stat-title">Awards Received</h5>
-            </div>
-            <!-- /stat -->
+      <div class="stat stat-item">
+        <div class="icon-part">
+          <i class="fa-brands fa-medapps"></i>
+        </div>
 
-            <div class="bgrid stat stat-item">
-              <div class="icon-part">
-                <i class="fa-brands fa-medapps"></i>
-              </div>
+        <h3 class="stat-count">120</h3>
 
-              <h3 class="stat-count">120</h3>
+        <h5 class="stat-title">Crazy Ideas</h5>
+      </div>
+      <!-- /stat -->
 
-              <h5 class="stat-title">Crazy Ideas</h5>
-            </div>
-            <!-- /stat -->
+      <div class="stat stat-item">
+        <div class="icon-part">
+          <i class="fa-solid fa-mug-hot"></i>
+        </div>
 
-            <div class="bgrid stat stat-item">
-              <div class="icon-part">
-                <i class="fa-solid fa-mug-hot"></i>
-              </div>
+        <h3 class="stat-count">1500</h3>
 
-              <h3 class="stat-count">1500</h3>
+        <h5 class="stat-title">Coffee Cups</h5>
+      </div>
+      <!-- /stat -->
 
-              <h5 class="stat-title">Coffee Cups</h5>
-            </div>
-            <!-- /stat -->
+      <div class="stat stat-item">
+        <div class="icon-part">
+          <i class="fa-regular fa-clock"></i>
+        </div>
 
-            <div class="bgrid stat stat-item">
-              <div class="icon-part">
-                <i class="fa-regular fa-clock"></i>
-              </div>
+        <h3 class="stat-count">7200</h3>
 
-              <h3 class="stat-count">7200</h3>
-
-              <h5 class="stat-title">Hours</h5>
-            </div>
-          </div>
+        <h5 class="stat-title">Hours</h5>
+      </div>
     </section>
 
     <!-- contact
    ================================================== -->
     <section id="contact">
-      <div class="row section-intro">
-        <div class="col-twelve">
+      <div class=" section-intro">
+        <div>
           <h5>Contact</h5>
           <h1>I'd Love To Hear From You.</h1>
 
@@ -720,81 +715,9 @@
           </p>
         </div>
       </div>
-      <!-- /section-intro -->
 
-      <div class="row contact-form">
-        <div class="col-twelve">
-          <!-- form -->
-          <form name="contactForm" id="contactForm" method="post" action="">
-            <fieldset>
-              <div class="form-field">
-                <input
-                  name="contactName"
-                  type="text"
-                  id="contactName"
-                  placeholder="Name"
-                  value=""
-                  minlength="2"
-                  required=""
-                />
-              </div>
-              <div class="form-field">
-                <input
-                  name="contactEmail"
-                  type="email"
-                  id="contactEmail"
-                  placeholder="Email"
-                  value=""
-                  required=""
-                />
-              </div>
-              <div class="form-field">
-                <input
-                  name="contactSubject"
-                  type="text"
-                  id="contactSubject"
-                  placeholder="Subject"
-                  value=""
-                />
-              </div>
-              <div class="form-field">
-                <textarea
-                  name="contactMessage"
-                  id="contactMessage"
-                  placeholder="message"
-                  rows="10"
-                  cols="50"
-                  required=""
-                ></textarea>
-              </div>
-              <div class="form-field">
-                <button class="submitform">Submit</button>
-                <div id="submit-loader">
-                  <div class="text-loader">Sending...</div>
-                  <div class="s-loader">
-                    <div class="bounce1"></div>
-                    <div class="bounce2"></div>
-                    <div class="bounce3"></div>
-                  </div>
-                </div>
-              </div>
-            </fieldset>
-          </form>
-          <!-- Form End -->
-
-          <!-- contact-warning -->
-          <div id="message-warning"></div>
-          <!-- contact-success -->
-          <div id="message-success">
-            <i class="fa fa-check"></i>Your message was sent, thank you!<br />
-          </div>
-        </div>
-        <!-- /col-twelve -->
-      </div>
-      <!-- /contact-form -->
-
-      <div class="row contact-info">
-        <div class="col-four tab-full">
+      <div class=" contact-info">
+        <div>
           <div class="icon">
             <i class="icon-pin"></i>
           </div>
@@ -808,7 +731,7 @@
           </p>
         </div>
 
-        <div class="col-four tab-full collapse">
+        <div class=" collapse">
           <div class="icon">
             <i class="icon-mail"></i>
           </div>
@@ -821,7 +744,7 @@
           </p>
         </div>
 
-        <div class="col-four tab-full">
+        <div>
           <div class="icon">
             <i class="icon-phone"></i>
           </div>
@@ -835,16 +758,14 @@
           </p>
         </div>
       </div>
-      <!-- /contact-info -->
     </section>
-    <!-- /contact -->
 
     <!-- footer
    ================================================== -->
 
     <footer>
-      <div class="row">
-        <div class="col-six tab-full pull-right social">
+      <div>
+        <div class="footer-social-container">
           <ul class="footer-social">
             <li>
               <a href="#"><i class="fa fa-facebook"></i></a>
@@ -864,27 +785,19 @@
           </ul>
         </div>
 
-        <div class="col-eight tab-full">
+        <div>
           <div class="copyright">
-            <span>© Copyright 2018 </span>
-            <span
-              >Design by
-              <a href="http://www.styleshout.com/">styleshout</a></span
-            >
-            <span
-              >Distributed by
-              <a href="https://themewagon.com/">themewagon</a></span
-            >
+            <span>© Copyright 2023 </span>
+            <span>Design by <a href="#">Omar Pérez</a></span>
           </div>
         </div>
 
         <div id="go-top">
           <a class="smoothscroll" title="Back to Top" href="#top"
-            ><i class="fa fa-long-arrow-up"></i
+            ><i class="fa-solid fa-chevron-up"></i
           ></a>
         </div>
       </div>
-      <!-- /row -->
     </footer>
 
     <div id="preloader">
@@ -897,6 +810,7 @@
       src="https://kit.fontawesome.com/e59e0b10fd.js"
       crossorigin="anonymous"
     ></script>
-    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="./src/js/main.js"></script>
   </body>
 </html>
