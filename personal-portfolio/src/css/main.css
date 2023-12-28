@@ -416,8 +416,8 @@ header .logo a {
 }
 .intro-info img {
   object-fit: cover;
-  height: 11rem;
-  width: 11rem;
+  height: 15rem;
+  width: 15rem;
   border-radius: 50%;
   float: left;
 }
