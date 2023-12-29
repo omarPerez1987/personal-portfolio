@@ -475,7 +475,7 @@ header .logo a {
 .about-content-skills {
   width: 50%;
 }
-.about-content-skills p{
+.about-content-skills p {
   margin-bottom: 8.3rem;
 }
 .about-content .skill-bars {
@@ -544,17 +544,16 @@ header .logo a {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .about-content-profile {
     width: 90%;
     margin: 0 auto;
   }
-  
+
   .about-content-skills {
     width: 90%;
     margin: 0 auto;
   }
-
 }
 
 /** 
@@ -815,7 +814,7 @@ header .logo a {
   overflow: hidden;
 }
 #portfolio .folio-item img {
-  border: 3px solid black;
+  border: 1px solid black;
   vertical-align: middle;
   transition: all 0.5s ease-in-out;
 }
@@ -956,10 +955,17 @@ header .logo a {
   font-size: 5.4rem;
   color: #ff0077;
 }
+
+.cauldron {
+  width: 54px;
+  height: 54px;
+  color: #ff0077;
+}
 .services-list h3 {
   color: #ffffff;
 }
 .services-list .desc {
+  margin-bottom: 8rem;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1079,6 +1085,10 @@ header .logo a {
   color: #ffffff;
 }
 .contact-info h5 {
+  font-size: 1.4rem;
+  line-height: 1.714;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
   color: #ff0077;
 }
 
@@ -1107,9 +1117,7 @@ footer a:focus {
 .footer-social-container {
   text-align: center;
 }
-/* footer .row {
-  max-width: 900px;
-} */
+
 footer .social {
   text-align: right;
 }
@@ -1128,6 +1136,9 @@ footer .footer-social li {
 }
 footer .footer-social li a {
   color: #ffffff;
+}
+footer .footer-social li a:hover {
+  color: #ff0077;
 }
 
 footer .copyright span {
