@@ -592,7 +592,6 @@ header .logo a {
   text-align: center;
   margin-bottom: 3.6rem;
   position: relative;
-  border-color: 2px solid red;
 }
 .section-intro h1 {
   font-family: poppins;
@@ -816,6 +815,7 @@ header .logo a {
   overflow: hidden;
 }
 #portfolio .folio-item img {
+  border: 3px solid black;
   vertical-align: middle;
   transition: all 0.5s ease-in-out;
 }
