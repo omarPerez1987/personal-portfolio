@@ -443,6 +443,9 @@ header .logo a {
   text-transform: uppercase;
   letter-spacing: 0.25rem;
 }
+.about-content-profile {
+  width: 50%;
+}
 .about-content .info-list {
   list-style: none;
   margin-left: 0;
@@ -468,6 +471,12 @@ header .logo a {
   color: #888888;
   font-size: 1.5rem;
   line-height: 1;
+}
+.about-content-skills {
+  width: 50%;
+}
+.about-content-skills p{
+  margin-bottom: 8.3rem;
 }
 .about-content .skill-bars {
   padding-left: 0;
@@ -535,6 +544,17 @@ header .logo a {
     flex-direction: column;
     text-align: center;
   }
+  
+  .about-content-profile {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .about-content-skills {
+    width: 90%;
+    margin: 0 auto;
+  }
+
 }
 
 /** 
