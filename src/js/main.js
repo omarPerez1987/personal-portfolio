@@ -74,43 +74,36 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
-// countUp
-const countUpElements = document.querySelectorAll(".stat-count");
+  // countUp
+  const countUpElements = document.querySelectorAll(".stat-count");
 
-countUpElements.forEach((element) => {
-  const targetValue = parseInt(element.textContent, 10);
-  const initialValue = 0;
-  let startTime;
-  let currentValue = initialValue;
+  countUpElements.forEach((element) => {
+    const targetValue = parseInt(element.textContent, 10);
+    let startTime;
+    let animationStarted = false;
 
-  const increment = (timestamp) => {
-    if (!startTime) startTime = timestamp;
-    const progress = timestamp - startTime;
-    const totalTime = 4500;
-    const incrementValue = (progress / totalTime) * (targetValue - initialValue);
+    const animateCountUp = (timestamp) => {
+      if (!startTime) startTime = timestamp;
+      const progress = timestamp - startTime;
+      const totalTime = 3500;
+      const incrementValue = (progress / totalTime) * targetValue;
 
-    if (progress < totalTime) {
-      currentValue = initialValue + incrementValue;
-      element.textContent = Math.round(currentValue);
-      requestAnimationFrame(increment);
-    } else {
-      element.textContent = targetValue;
-    }
-  };
+      if (progress < totalTime) {
+        element.textContent = Math.round(incrementValue);
+        requestAnimationFrame(animateCountUp);
+      } else {
+        element.textContent = targetValue;
+      }
+    };
 
-  let animationStarted = false;
-
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 7000 && !animationStarted) {
-      startTime = null;
-      animationStarted = true;
-      requestAnimationFrame(increment);
-    }
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 7000 && !animationStarted) {
+        startTime = null;
+        animationStarted = true;
+        requestAnimationFrame(animateCountUp);
+      }
+    });
   });
-});
-
-
-
 
   // Back to top
   const pxShow = 500;
