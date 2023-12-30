@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded", function () {
   // Preloader
   window.addEventListener("load", function () {
@@ -76,29 +74,42 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
-  // countUp
+// countUp
 const countUpElements = document.querySelectorAll(".stat-count");
 
 countUpElements.forEach((element) => {
   const targetValue = parseInt(element.textContent, 10);
   const initialValue = 0;
+  let startTime;
   let currentValue = initialValue;
 
-  const increment = () => {
-    const totalDifference = targetValue - initialValue;
-    const totalTime = 2500;
-    const incrementValue = (totalDifference / totalTime) * 3;
-    if (currentValue + incrementValue >= targetValue) {
-      element.textContent = targetValue;
-      clearInterval(interval);
-    } else {
-      currentValue += incrementValue;
+  const increment = (timestamp) => {
+    if (!startTime) startTime = timestamp;
+    const progress = timestamp - startTime;
+    const totalTime = 4500;
+    const incrementValue = (progress / totalTime) * (targetValue - initialValue);
+
+    if (progress < totalTime) {
+      currentValue = initialValue + incrementValue;
       element.textContent = Math.round(currentValue);
+      requestAnimationFrame(increment);
+    } else {
+      element.textContent = targetValue;
     }
   };
 
-  const interval = setInterval(increment, 3); 
+  let animationStarted = false;
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 7000 && !animationStarted) {
+      startTime = null;
+      animationStarted = true;
+      requestAnimationFrame(increment);
+    }
+  });
 });
+
+
 
 
   // Back to top
