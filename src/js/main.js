@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", function () {
   // Preloader
   window.addEventListener("load", function () {
@@ -73,6 +75,31 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
+
+  // countUp
+const countUpElements = document.querySelectorAll(".stat-count");
+
+countUpElements.forEach((element) => {
+  const targetValue = parseInt(element.textContent, 10);
+  const initialValue = 0;
+  let currentValue = initialValue;
+
+  const increment = () => {
+    const totalDifference = targetValue - initialValue;
+    const totalTime = 2500;
+    const incrementValue = (totalDifference / totalTime) * 3;
+    if (currentValue + incrementValue >= targetValue) {
+      element.textContent = targetValue;
+      clearInterval(interval);
+    } else {
+      currentValue += incrementValue;
+      element.textContent = Math.round(currentValue);
+    }
+  };
+
+  const interval = setInterval(increment, 3); 
+});
+
 
   // Back to top
   const pxShow = 500;
