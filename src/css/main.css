@@ -159,6 +159,13 @@ header .logo a {
   color: #ff0077;
 }
 
+.contact-header {
+  display: flex;
+  justify-content: end;
+  margin-right: -5rem;
+  margin-top: 1rem;
+}
+
 /**
  * responsive:
  * header styles
@@ -172,6 +179,9 @@ header .logo a {
 @media only screen and (max-width: 768px) {
   header .top-bar {
     left: 50px;
+  }
+  .contact-header {
+    display: none;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -500,6 +510,11 @@ header .logo a {
   .intro-info {
     margin: 0 auto;
     width: 90%;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .button-section {
+    display: none;
   }
 }
 @media only screen and (max-width: 768px) {

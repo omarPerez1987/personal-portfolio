@@ -252,6 +252,12 @@ button.stroke:hover,
   color: #fff;
 }
 
+.button.button-header {
+  color: white;
+  background-color: #000000;
+}
+
+
 /* * skillbars ******************************* */
 
 .skill-bars {
