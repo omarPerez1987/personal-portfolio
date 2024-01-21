@@ -829,7 +829,6 @@ header .logo a {
   overflow: hidden;
 }
 #portfolio .folio-item img {
-  border: 1px solid black;
   vertical-align: middle;
   transition: all 0.5s ease-in-out;
 }
@@ -840,7 +839,6 @@ header .logo a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: transparent;
   transition: all 0.5s ease-in-out;
 }
 
@@ -850,6 +848,7 @@ header .logo a {
   align-items: center;
   width: 100%;
   height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 #portfolio .folio-item-text {
   text-align: center;
@@ -895,17 +894,32 @@ header .logo a {
   }
 }
 @media only screen and (max-width: 768px) {
-  #portfolio-content {
-    grid-template-columns: 1fr;
+  .portfolio-container {
+    display: flex;
+    flex-direction: column;
   }
+
   #portfolio .folio-title {
     font-size: 2.5rem;
   }
-}
-@media only screen and (max-width: 400px) {
-  #portfolio-content {
-    width: 90%;
+
+  .item-wrap {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
   }
+}
+@media only screen and (max-width: 500px) {
+  .portfolio-container {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .item-wrap {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+  }
+
   #portfolio .folio-title {
     font-size: 2.2rem;
   }
