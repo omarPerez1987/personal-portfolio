@@ -53,6 +53,22 @@ document.addEventListener('DOMContentLoaded', function () {
     return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t
   }
 
+  // Carrusel de servicios: 1, 2 o 3 por vista según el ancho
+  if (window.Swiper) {
+    // eslint-disable-next-line no-new
+    new window.Swiper('#swiper-services', {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      loop: true,
+      autoplay: { delay: 4500, disableOnInteraction: true },
+      pagination: { el: '.swiper-pagination', clickable: true },
+      breakpoints: {
+        700: { slidesPerView: 2 },
+        1100: { slidesPerView: 3 }
+      }
+    })
+  }
+
   // countUp
   const countUpElements = document.querySelectorAll('.stat-count')
 
@@ -75,13 +91,19 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
 
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 7000 && !animationStarted) {
-        startTime = null
-        animationStarted = true
-        requestAnimationFrame(animateCountUp)
-      }
-    })
+    // Arranca cuando la franja de stats entra en pantalla
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && !animationStarted) {
+          startTime = null
+          animationStarted = true
+          requestAnimationFrame(animateCountUp)
+          observer.disconnect()
+        }
+      },
+      { threshold: 0.4 }
+    )
+    observer.observe(element)
   })
 
   // Back to top

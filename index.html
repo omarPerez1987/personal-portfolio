@@ -1,10 +1,19 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Portfolio</title>
-    <meta charset="UTF-8" />
+    <title>Omar Pérez · Desarrollador Full Stack</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Desarrollador full stack. Construyo productos SaaS B2B en TypeScript con Node.js, React y PostgreSQL, aplicando Clean Architecture y DDD."
+    />
+    <meta property="og:title" content="Omar Pérez · Desarrollador Full Stack" />
+    <meta
+      property="og:description"
+      content="SaaS B2B con TypeScript, Node.js, React y PostgreSQL."
+    />
+    <meta property="og:image" content="images/profile.jpg" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -12,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,900&display=swap"
       rel="stylesheet"
     />
 
@@ -36,20 +45,22 @@
           <nav id="main-nav-wrap">
             <ul class="main-navigation">
               <li class="current">
-                <a class="smoothscroll" href="#intro" title="">Home</a>
-              </li>
-              <li><a class="smoothscroll" href="#about" title="">About</a></li>
-              <li>
-                <a class="smoothscroll" href="#resume" title="">Resume</a>
+                <a class="smoothscroll" href="#intro" title="">Inicio</a>
               </li>
               <li>
-                <a class="smoothscroll" href="#portfolio" title="">Portfolio</a>
+                <a class="smoothscroll" href="#about" title="">Sobre mí</a>
               </li>
               <li>
-                <a class="smoothscroll" href="#services" title="">Services</a>
+                <a class="smoothscroll" href="#resume" title="">Trayectoria</a>
               </li>
               <li>
-                <a class="smoothscroll" href="#contact" title="">Contact</a>
+                <a class="smoothscroll" href="#portfolio" title="">Proyectos</a>
+              </li>
+              <li>
+                <a class="smoothscroll" href="#services" title="">Qué hago</a>
+              </li>
+              <li>
+                <a class="smoothscroll" href="#contact" title="">Contacto</a>
               </li>
             </ul>
           </nav>
@@ -59,18 +70,10 @@
         <div>
           <a
             href="#contact"
-            title="Hire Me"
+            title="Contacto"
             class="button button-header stroke smoothscroll"
             >Contáctame</a
           >
-          <a
-            href="https://drive.google.com/file/d/1AdsL45YYCuJt6BxB5TD1508PMixiQNdM/view?usp=sharing"
-            title="Download CV"
-            class="button button-header stroke"
-            target="_blank"
-          >
-            Descargar CV
-          </a>
         </div>
       </div>
     </header>
@@ -84,11 +87,20 @@
       <!--intro-content -->
       <div class="intro-content">
         <h5>Hello, World.</h5>
-        <h1>I'm Omar Pérez.</h1>
+        <h1>Soy Omar Pérez<span class="accent-dot">.</span></h1>
 
         <p class="intro-position">
-          <span>Front-end Developer</span>
-          <span>Back-end Developer</span>
+          <span>Full Stack Developer</span>
+          <span>Clean Architecture &amp; DDD</span>
+        </p>
+
+        <p class="intro-code">
+          <span class="intro-code-comment">// construyo</span> SaaS B2B
+          <span class="intro-code-comment">con</span> TypeScript,
+          Node.js <span class="intro-code-comment">y</span> React<span
+            class="intro-caret"
+            aria-hidden="true"
+          ></span>
         </p>
 
         <a class="button stroke-white smoothscroll" href="#about" title=""
@@ -133,17 +145,16 @@
       <div class="section-intro">
         <div>
           <h5>ACERCA DE</h5>
-          <h1>Permítame presentarme.</h1>
+          <h1>Déjame presentarme.</h1>
 
           <div class="intro-info">
-            <img src="./images/profile.jpg" alt="Profile Picture" />
+            <img src="./images/profile.jpg" alt="Omar Pérez" />
 
             <p class="lead">
-              Soy un alquimista de código, un desarrollador fullstack apasionado
-              por fusionar arte y funcionalidad. Mi enfoque va más allá de las
-              líneas de código; creo en las experiencias únicas que trascienden
-              lo convencional. Mi misión es tejer magia digital, donde agregar
-              valor es mi norma.
+              Construyo software B2B pensado para crecer: productos SaaS en
+              TypeScript, del modelo de datos a la interfaz. Y
+              antes de programar, vendía riego: conozco al cliente agrícola
+              desde dentro.
             </p>
           </div>
         </div>
@@ -153,72 +164,70 @@
         <div class="about-content-profile">
           <h3>Perfil</h3>
           <p>
-            Me esfuerzo por ofrecer soluciones simples y efectivas a través de
-            mi trabajo. Con habilidades técnicas en constante evolución, estoy
-            aquí para contribuir de manera positiva y crecer junto a cada
-            proyecto.
+            Desarrollo software full stack en TypeScript desde 2023, sobre
+            Clean Architecture y DDD: aislamiento entre clientes con Row-Level
+            Security, fronteras entre módulos que se verifican de forma
+            automática y documentación que explica el porqué de cada decisión.
+          </p>
+          <p>
+            Elijo la arquitectura según el contexto. La complejidad tiene que
+            ganarse su sitio.
           </p>
 
           <ul class="info-list">
             <li>
               <strong>Nombre:</strong>
-              <span>Omar Pérez</span>
-            </li>
-            <li>
-              <strong>Fecha de Nacimiento:</strong>
-              <span>Enero 01, 1987</span>
+              <span>Omar Pérez Reina</span>
             </li>
             <li>
               <strong>Trabajo:</strong>
-              <span>Full-stack developer </span>
+              <span>Desarrollador Full Stack en Keynet Software</span>
             </li>
             <li>
-              <strong>Github:</strong>
-              <span>https://github.com/omarPerez1987</span>
+              <strong>Ubicación:</strong>
+              <span>Lleida · presencial, híbrido o remoto</span>
             </li>
             <li>
-              <strong>Email:</strong>
-              <span>omar.perez.dev@gmail.com</span>
+              <strong>Idiomas:</strong>
+              <span>Castellano, catalán e inglés (B1)</span>
             </li>
           </ul>
         </div>
 
         <div class="about-content-skills">
-          <h3>Skills</h3>
+          <h3>Stack</h3>
           <p>
-            Como desarrollador fullstack, he perfeccionado un conjunto diverso
-            de habilidades para abordar desafíos desde todos los ángulos. Dejo
-            aquí algunas de mis habilidades...
+            Las tecnologías con las que trabajo cada día, agrupadas por capa.
           </p>
 
-          <ul class="skill-bars">
+          <ul class="stack-groups">
             <li>
-              <div class="progress percent90"><span>90%</span></div>
-              <strong>HTML5 & CSS3</strong>
+              <strong>Lenguajes</strong>
+              <span>TypeScript</span><span>JavaScript</span><span>SQL</span
+              ><span>C#</span>
             </li>
             <li>
-              <div class="progress percent80"><span>80%</span></div>
-              <strong>JAVASCRIPT & TYPESCRIPT</strong>
+              <strong>Backend</strong>
+              <span>Node.js</span><span>NestJS</span><span>Fastify</span
+              ><span>Express</span><span>Prisma</span><span>Drizzle</span
+              ><span>PostgreSQL</span><span>BullMQ</span><span>Redis</span>
             </li>
             <li>
-              <div class="progress percent80"><span>80%</span></div>
-              <strong>REACT & REDUX & ZUSTAND</strong>
+              <strong>Frontend</strong>
+              <span>React</span><span>Next.js</span><span>Vite</span
+              ><span>TanStack Query</span><span>TanStack Router</span
+              ><span>Zustand</span><span>Tailwind CSS</span>
             </li>
             <li>
-              <div class="progress percent75"><span>75%</span></div>
-              <strong>NODE & EXPRESS & NEST</strong>
+              <strong>Arquitectura</strong>
+              <span>Clean Architecture</span><span>Hexagonal</span
+              ><span>DDD</span><span>Bounded contexts</span
+              ><span>Row-Level Security</span>
             </li>
             <li>
-              <div class="progress percent75"><span>75%</span></div>
-              <strong>MONGODB & SQL</strong>
-            </li>
-            <li>
-              <div class="progress percent70"><span>70%</span></div>
-              <strong>PYTHON & DJANGO</strong>
-            </li>
-            <li>
-              <div class="progress percent50"><span>50%</span></div>
-              <strong>AWS & CLI</strong>
+              <strong>Calidad</strong>
+              <span>Vitest</span><span>Jest</span><span>Playwright</span
+              ><span>Biome</span><span>dependency-cruiser</span>
             </li>
           </ul>
         </div>
@@ -226,17 +235,9 @@
 
       <div class="button-section">
         <div>
-          <a href="#contact" title="Hire Me" class="button stroke smoothscroll"
+          <a href="#contact" title="Contacto" class="button stroke smoothscroll"
             >Contáctame</a
           >
-          <a
-            href="https://drive.google.com/file/d/1AdsL45YYCuJt6BxB5TD1508PMixiQNdM/view?usp=sharing"
-            title="Download CV"
-            class="button button-black stroke"
-            target="_blank"
-          >
-            Descargar CV
-          </a>
         </div>
       </div>
     </section>
@@ -248,12 +249,15 @@
       <div class="section-intro">
         <div>
           <h5>RESUMEN</h5>
-          <h1>Más de mis credenciales.</h1>
+          <h1>
+            Primero entendí al cliente. Después aprendí a construir software
+            para él.
+          </h1>
 
           <p class="lead">
-            Aunque me considero un eterno aprendiz, mi travesía en el desarrollo
-            fullstack ha sido una sinfonía de desafíos apasionantes y
-            descubrimientos continuos.
+            Primero dirigí el área comercial de una empresa de riego; después
+            vinieron la formación full stack y el desarrollo de productos SaaS
+            B2B con Clean Architecture y DDD.
           </p>
         </div>
       </div>
@@ -274,35 +278,58 @@
 
               <div class="timeline-header">
                 <h3>Keynet Software</h3>
-                <p>2024 - Present</p>
+                <p>2024 - Actualidad</p>
               </div>
 
               <div class="timeline-content">
-                <h4>Full-stack developer</h4>
+                <h4>Desarrollador Full Stack</h4>
 
                 <p>
-                  Desarrollo de aplicaciones SaaS eficientes y escalables, con
-                  un enfoque en optimizar la experiencia del usuario.
-                  Implementación de tecnologías modernas como Next.js en el
-                  frontend, y Nest.js junto con Prisma como ORM en el backend,
-                  utilizando una arquitectura basada en DDD (Domain-Driven
-                  Design).
+                  Productos SaaS B2B multi-tenant para empresas agrícolas,
+                  comercio y servicios, en TypeScript y PostgreSQL sobre Clean
+                  Architecture y DDD. He trabajado con dos generaciones de
+                  stack: NestJS, Prisma y Next.js, y Fastify, Drizzle y React
+                  con Vite.
                 </p>
 
-                <p>
-                  Diseño y desarrollo de BrokerSuit y AgroSuit, dos soluciones
-                  SaaS esenciales para la automatización y gestión de procesos
-                  específicos en sus respectivos sectores, contribuyendo a
-                  mejorar significativamente la eficiencia operativa de los
-                  clientes.
-                </p>
-
-                <p>
-                  Colaboración estrecha con el equipo en la mejora continua del
-                  software, aplicando principios de clean architecture para
-                  asegurar la escalabilidad, mantenibilidad y calidad de los
-                  proyectos a largo plazo.
-                </p>
+                <ul class="timeline-projects">
+                  <li>
+                    <strong>Plataforma de gestión agrícola</strong>
+                    Bounded contexts, Row-Level Security y fronteras entre
+                    módulos verificadas de forma automática.
+                    <span class="timeline-stack"
+                      >Fastify · Drizzle · React · TanStack Router</span
+                    >
+                  </li>
+                  <li>
+                    <strong>TPV en la nube para comercio minorista</strong>
+                    Ventas, tickets ESC/POS con desglose de IVA e impresión en
+                    dispositivos locales.
+                    <span class="timeline-stack"
+                      >Express · Prisma · React · Zustand</span
+                    >
+                  </li>
+                  <li>
+                    <strong>Gestión de tickets internos y facturación</strong>
+                    Soporte interno, reservas e integraciones de calendario.
+                    <span class="timeline-stack">Next.js · Prisma</span>
+                  </li>
+                  <li>
+                    <strong>Plataforma de gestión de calidad</strong>
+                    App de cliente y de administración, colas de trabajo, emails
+                    transaccionales y tests end-to-end.
+                    <span class="timeline-stack"
+                      >NestJS · Prisma · Next.js · BullMQ</span
+                    >
+                  </li>
+                  <li>
+                    <strong>ERP/CRM de intermediación comercial</strong>
+                    Pedidos, emails y facturación con eventos de dominio.
+                    <span class="timeline-stack"
+                      >NestJS · Prisma · Next.js · Playwright</span
+                    >
+                  </li>
+                </ul>
               </div>
             </div>
 
@@ -317,13 +344,31 @@
               </div>
 
               <div class="timeline-content">
-                <h4>Hotel Miranda | Full-stack developer</h4>
+                <h4>Desarrollador Full Stack (prácticas)</h4>
                 <p>
-                  Desarrollo de un proyecto integral para la cadena hotelera,
-                  abarcando tanto la interfaz visual para el usuario final como
-                  la plataforma administrativa. Además, llevé a cabo la
-                  implementación del servidor, asegurando una solución completa
-                  y cohesiva.
+                  Proyecto formativo completo de gestión hotelera: web pública,
+                  dashboard en React y Redux, API en Node.js, Express y
+                  TypeScript, y tests con Jest y Cypress.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-block">
+              <div class="timeline-ico">
+                <i class="fa fa-briefcase"></i>
+              </div>
+
+              <div class="timeline-header">
+                <h3>Tecniriego</h3>
+                <p>2018 - 2023</p>
+              </div>
+
+              <div class="timeline-content">
+                <h4>Responsable del área comercial</h4>
+                <p>
+                  Creé y dirigí el departamento comercial de una empresa de riego
+                  y ferretería. Asesoramiento técnico a agricultores y
+                  crecimiento sostenido de la cartera de clientes.
                 </p>
               </div>
             </div>
@@ -349,16 +394,10 @@
               </div>
 
               <div class="timeline-content">
-                <h4>Training Advanced full-stack</h4>
+                <h4>Training Advanced Web Full Stack</h4>
                 <p>
-                  Mi experiencia en el training ha sido como una inmersión en
-                  las últimas tecnologías, con sprints semanales que recrean un
-                  entorno laboral real. En este viaje formativo, he pulido mis
-                  habilidades con tecnologías de vanguardia y he aprendido a
-                  desenvolverme con agilidad en proyectos con plazos ajustados.
-                  Este programa ha sido más que un entrenamiento; ha sido una
-                  preparación intensiva para enfrentar los retos del desarrollo
-                  web con confianza y destreza.
+                  Sprints semanales que simulan un equipo real: React, Redux,
+                  Node.js, TypeScript, testing y despliegue.
                 </p>
               </div>
             </div>
@@ -375,14 +414,10 @@
               </div>
 
               <div class="timeline-content">
-                <h4>Full-stack Developer (7 Meses)</h4>
+                <h4>Bootcamp de Desarrollo Web Full Stack (MERN)</h4>
                 <p>
-                  En mi travesía de 7 meses como desarrollador full-stack, he
-                  abrazado la dualidad entre el front y el back-end con
-                  entusiasmo y dedicación. Cada línea de código es una historia
-                  de aprendizaje y superación, desde mis primeros pasos en el
-                  diseño de interfaces cautivadoras hasta la gestión eficiente
-                  de bases de datos complejas.
+                  Siete meses de MongoDB, Express, React y Node.js: APIs,
+                  autenticación con JWT y aplicaciones completas.
                 </p>
               </div>
             </div>
@@ -401,10 +436,8 @@
               <div class="timeline-content">
                 <h4>Front-end Developer +1200H</h4>
                 <p>
-                  A través de esta experiencia, he perfeccionado mi habilidad
-                  para crear interfaces cautivadoras y funcionales. Explorando
-                  desde los fundamentos hasta las últimas tendencias, este curso
-                  ha sido mi brújula en la creación de experiencias digitales.
+                  Donde empezó todo: HTML, CSS, JavaScript, React y Git, por mi
+                  cuenta y con más de 1.200 horas.
                 </p>
               </div>
             </div>
@@ -421,12 +454,12 @@
       <div class="section-intro">
         <div>
           <h5>PORTAFOLIO</h5>
-          <h1>Echa un vistazo a algunos de mis trabajos.</h1>
+          <h1>Lo que construyo por mi cuenta.</h1>
 
           <p class="lead">
-            Te invito a explorar algunos de mis trabajos, donde la funcionalidad
-            se encuentra con la creatividad, y el progreso es evidente en cada
-            rincón de mi portafolio digital.
+            Proyectos propios: software para explotaciones agrícolas y
+            ganaderas, un comparador de tarifas de energía y un asistente de
+            voz con LLM. Aquí elijo yo la arquitectura y documento el porqué.
           </p>
         </div>
       </div>
@@ -435,57 +468,50 @@
         <div class="portfolio-content">
           <div class="folio-item">
             <div class="item-wrap">
-              <img src="images/portfolio/miranda.png" alt="Miranda" />
-              <a href="http://51.44.22.83/" class="overlay" target="_blank">
-                <div class="folio-item-box">
-                  <div class="folio-item-text">
-                    <h3 class="folio-title">Hotel Miranda</h3>
-                    <span class="folio-types"> Web Development | DJANGO</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- /folio-item -->
-
-          <div class="folio-item">
-            <div class="item-wrap">
               <img
-                class="img-oxygen-shop"
-                src="images/portfolio/oxygen-shop.png"
-                alt="oxygen-shop"
+                src="images/portfolio/ags-pro-terra.png"
+                alt="AGS Pro Terra"
               />
               <a
-                href="https://omarperez1987.github.io/oxygen-shop/"
+                href="https://github.com/omarPerez1987/ags-pro-terra"
                 class="overlay"
                 target="_blank"
+                rel="noopener"
               >
                 <div class="folio-item-box">
                   <div class="folio-item-text">
-                    <h3 class="folio-title">Oxygen Shop</h3>
-                    <span class="folio-types"> Web Design | JAVASCRIPT</span>
+                    <h3 class="folio-title">AGS Pro Terra</h3>
+                    <span class="folio-types">
+                      Cuaderno de campo · RD 1054/2022 · SIGPAC
+                    </span>
+                    <span class="folio-stack">
+                      Next.js · Prisma · PostgreSQL · Stripe
+                    </span>
                   </div>
                 </div>
               </a>
             </div>
           </div>
-
           <!-- /folio-item -->
 
           <div class="folio-item">
             <div class="item-wrap">
-              <img src="images/portfolio/kiu.png" alt="Virtual Assistant Kiu" />
+              <img src="images/portfolio/ahorroclic.png" alt="AhorroClic" />
               <a
-                href="https://restaurante-firebase.vercel.app/"
+                href="https://ahorroclic-omarperezs-projects.vercel.app/"
                 class="overlay"
                 target="_blank"
+                rel="noopener"
               >
                 <div class="folio-item-box">
                   <div class="folio-item-text">
-                    <h3 class="folio-title">Virtual Assistant Kiu</h3>
+                    <h3 class="folio-title">AhorroClic</h3>
                     <span class="folio-types">
-                      Web Development | Firebase
+                      Comparador de luz y gas · Precio de la luz con datos de
+                      REE
+                    </span>
+                    <span class="folio-stack">
+                      Next.js · Prisma · PostgreSQL · Recharts
                     </span>
                   </div>
                 </div>
@@ -498,17 +524,21 @@
         <div class="portfolio-content">
           <div class="folio-item">
             <div class="item-wrap">
-              <img src="images/portfolio/dasboard.png" alt="dashboard" />
+              <img src="images/portfolio/ags-pro-farm.png" alt="AGS Pro Farm" />
               <a
-                href="http://dashboard-miranda-rr.s3-website.eu-west-3.amazonaws.com/"
+                href="https://github.com/omarPerez1987/agspro"
                 class="overlay"
                 target="_blank"
+                rel="noopener"
               >
                 <div class="folio-item-box">
                   <div class="folio-item-text">
-                    <h3 class="folio-title">Dashboard Miranda</h3>
+                    <h3 class="folio-title">AGS Pro Farm</h3>
                     <span class="folio-types">
-                      full software application | AWS
+                      Gestión ganadera · PWA · Avisos push
+                    </span>
+                    <span class="folio-stack">
+                      Next.js · Prisma · PostgreSQL · Turborepo
                     </span>
                   </div>
                 </div>
@@ -519,43 +549,21 @@
 
           <div class="folio-item">
             <div class="item-wrap">
-              <img
-                src="images/portfolio/oxygen-search.png"
-                alt="oxygen-search"
-              />
+              <img src="images/portfolio/novo.png" alt="Novo" />
               <a
-                href="http://omardev-oxygensearch.s3-website.eu-north-1.amazonaws.com/"
+                href="https://github.com/omarPerez1987/Novo"
                 class="overlay"
                 target="_blank"
+                rel="noopener"
               >
                 <div class="folio-item-box">
                   <div class="folio-item-text">
-                    <h3 class="folio-title">Oxygen Search</h3>
-                    <span class="folio-types"> Web Development | AWS </span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- /folio-item -->
-
-          <div class="folio-item">
-            <div class="item-wrap">
-              <img
-                src="./images/portfolio/Likes&Movies.png"
-                alt="Likes & Movies"
-              />
-              <a
-                href="https://likes-movies-alpha870.vercel.app/"
-                class="overlay"
-                target="_blank"
-              >
-                <div class="folio-item-box">
-                  <div class="folio-item-text">
-                    <h3 class="folio-title">Likes & Movies</h3>
+                    <h3 class="folio-title">Novo</h3>
                     <span class="folio-types">
-                      Web Development | API YouTube
+                      Asistente de voz · Alexa · LLM
+                    </span>
+                    <span class="folio-stack">
+                      Python · Starlette · MQTT · Groq / Gemini
                     </span>
                   </div>
                 </div>
@@ -564,6 +572,10 @@
           </div>
         </div>
       </article>
+      <p class="portfolio-note">
+        AGS Pro es privado: demo bajo petición en
+        <a href="#contact" class="smoothscroll">contacto</a>.
+      </p>
     </section>
 
     <!-- services Section
@@ -573,13 +585,12 @@
 
       <div class="section-intro">
         <div>
-          <h5>SERVICIOS</h5>
-          <h1>¿Qué puedo hacer por ti?</h1>
+          <h5>QUÉ HAGO</h5>
+          <h1>¿Qué puedo aportar a tu equipo?</h1>
 
           <p class="lead">
-            Como alquimista del código, ofrezco un abanico de posibilidades,
-            desde la forja de interfaces cautivadoras hasta la destilación de
-            sistemas back-end eficientes.
+            Del modelo de datos a la interfaz, con la arquitectura pensada para
+            que el producto pueda crecer sin romperse.
           </p>
         </div>
       </div>
@@ -588,46 +599,59 @@
       <div id="swiper-services" class="swiper services-content">
         <div class="swiper-wrapper services-list">
           <div class="swiper-slide service">
-            <span class="icon"><i class="fa-solid fa-code"></i></span>
-
-            <div class="service-content">
-              <h3>Maquetación</h3>
-
-              <p class="desc">
-                Combinación de píxeles y elegancia, HTML y CSS son mis
-                herramientas para esculpir la estética digital. Como fullstack,
-                mi enfoque va más allá de las etiquetas y estilos.
-              </p>
-            </div>
-          </div>
-          <!-- /service -->
-
-          <div class="swiper-slide service">
-            <span class="icon"><i class="fa-solid fa-mortar-pestle"></i></span>
-
-            <div class="service-content">
-              <h3>Dinamismo</h3>
-
-              <p class="desc">
-                En el caldero del desarrollo, infundo vida con JavaScript y
-                potencio la solidez de tipado con el elixir de TypeScript.
-                Creando así la mezcla perfecta de interfaces dinámicas y
-                estructuras de datos robustas.
-              </p>
-            </div>
-          </div>
-          <!-- /service -->
-
-          <div class="swiper-slide service">
             <span class="icon"><i class="fa-solid fa-cubes-stacked"></i></span>
 
             <div class="service-content">
-              <h3>Componentes & Estados</h3>
+              <h3>Arquitectura</h3>
 
               <p class="desc">
-                Incorporando a la pócima React y Redux transforman la lógica en
-                hechizos, se despliegan con encantamientos y usando los estados
-                crean la esencia misma de la experiencia del usuario.
+                Clean Architecture, hexagonal y DDD cuando el producto lo pide:
+                bounded contexts, fronteras entre módulos que se verifican
+                solas y decisiones documentadas.
+              </p>
+            </div>
+          </div>
+          <!-- /service -->
+
+          <div class="swiper-slide service">
+            <span class="icon"><i class="fa-solid fa-gears"></i></span>
+
+            <div class="service-content">
+              <h3>Backend</h3>
+
+              <p class="desc">
+                APIs con NestJS o Fastify, Prisma o Drizzle, colas con BullMQ,
+                emails, facturación y eventos de dominio. Lógica de negocio
+                donde tiene que estar.
+              </p>
+            </div>
+          </div>
+          <!-- /service -->
+
+          <div class="swiper-slide service">
+            <span class="icon"><i class="fa-solid fa-code"></i></span>
+
+            <div class="service-content">
+              <h3>Frontend</h3>
+
+              <p class="desc">
+                React con Next.js o Vite, estado bien organizado (Zustand,
+                TanStack Query y Router), interfaces responsive y PDFs
+                generados en cliente.
+              </p>
+            </div>
+          </div>
+          <!-- /service -->
+
+          <div class="swiper-slide service">
+            <span class="icon"><i class="fa-solid fa-book-open"></i></span>
+
+            <div class="service-content">
+              <h3>Datos multi-tenant</h3>
+
+              <p class="desc">
+                Modelos de datos alineados con el dominio y aislamiento entre
+                clientes con Row-Level Security de PostgreSQL.
               </p>
             </div>
           </div>
@@ -640,42 +664,8 @@
               <h3>Testing</h3>
 
               <p class="desc">
-                En el laboratorio de pruebas, aseguro la calidad con Jest y la
-                visión completa con pruebas End-to-End. Cada test es una fórmula
-                mágica, donde Jest revela la esencia de cada función y las
-                pruebas End-to-End exploran la magia completa de las
-                aplicaciones.
-              </p>
-            </div>
-          </div>
-          <!-- /service -->
-
-          <div class="swiper-slide service">
-            <span class="icon"><i class="fa-solid fa-gears"></i></span>
-
-            <div class="service-content">
-              <h3>Servidor</h3>
-
-              <p class="desc">
-                En el taller culinario del desarrollo web, me gusta cocinar
-                sistemas robustos y seguros que sostienen la magia del
-                desarrollo. Cada línea de código es una receta en la
-                construcción de experiencias.
-              </p>
-            </div>
-          </div>
-          <!-- /service -->
-
-          <div class="swiper-slide service">
-            <span class="icon"><i class="fa-solid fa-book-open"></i></span>
-
-            <div class="service-content">
-              <h3>Bases de datos</h3>
-
-              <p class="desc">
-                En la vasta libreia de datos, mi pericia abarca la creación y
-                gestión de bases de datos, donde cada consulta son las llaves
-                que desbloquean las puertas a información valiosa.
+                Unitarios con Vitest y Jest, y end-to-end contra una base de
+                datos aislada. Hooks de calidad antes de cada commit.
               </p>
             </div>
           </div>
@@ -685,12 +675,11 @@
             <span class="icon"><i class="fa-solid fa-rocket"></i></span>
 
             <div class="service-content">
-              <h3>Despliegue</h3>
+              <h3>Integraciones</h3>
 
               <p class="desc">
-                En el laboratorio digital, utilizando la alquimia moderna de
-                AWS, orquesto el despliegue de aplicaciones, donde cada
-                implementación es un ritual que desata la magia digital.
+                Calendarios con webhooks, pagos con Stripe, emails con Amazon
+                SES e impresoras de tickets ESC/POS.
               </p>
             </div>
           </div>
@@ -702,7 +691,7 @@
 
     <!-- stats Section
    ================================================== -->
-    <section class="stats" class="count-up">
+    <section class="stats count-up">
       <div class="stat stat-item">
         <div class="icon-part">
           <i class="fa-solid fa-suitcase-rolling"></i>
@@ -776,12 +765,11 @@
       <div class="section-intro">
         <div>
           <h5>Contacto</h5>
-          <h1>Me encantaría saber de usted.</h1>
+          <h1>¿Hablamos?</h1>
 
           <p class="lead">
-            Considero que una comunicación abierta y una comprensión profunda
-            son los pilares esenciales para obtener relaciones sólidas y
-            efectivas.
+            Si tienes un producto que tiene que crecer sin romperse, o quieres
+            ver AGS Pro por dentro, escríbeme.
           </p>
         </div>
       </div>
@@ -792,9 +780,9 @@
             <i class="fa-solid fa-location-dot"></i>
           </div>
 
-          <h5>Donde encontrarme</h5>
+          <h5>Dónde estoy</h5>
 
-          <p>22500, Binéfar</p>
+          <p>Lleida · presencial, híbrido o remoto</p>
         </div>
 
         <div class="collapse">
@@ -802,19 +790,28 @@
             <i class="fa-regular fa-envelope"></i>
           </div>
 
-          <h5>Envíeme un correo electrónico a</h5>
+          <h5>Escríbeme a</h5>
 
-          <p>omar.perez.dev@gmail.com</p>
+          <p>
+            <a href="mailto:omar.perez.dev@gmail.com">omar.perez.dev@gmail.com</a>
+          </p>
         </div>
 
         <div>
           <div class="icon">
-            <i class="fa-solid fa-phone"></i>
+            <i class="fa-brands fa-linkedin"></i>
           </div>
 
-          <h5>Llámame a</h5>
+          <h5>O en LinkedIn</h5>
 
-          <p>Mobile: +34 687316707<br /></p>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/omar-perezr/"
+              target="_blank"
+              rel="noopener"
+              >linkedin.com/in/omar-perezr</a
+            >
+          </p>
         </div>
       </div>
     </section>
@@ -856,8 +853,8 @@
 
         <div>
           <div class="copyright">
-            <span>© Copyright 2023 </span>
-            <span>Design by <a href="#">Omar Pérez</a></span>
+            <span>© 2026 Omar Pérez Reina</span>
+            <span>Diseñado y programado a mano, sin frameworks.</span>
           </div>
         </div>
 

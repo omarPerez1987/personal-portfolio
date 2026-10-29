@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "npx live-server ./",
+    "dev": "vite --port 5500 --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -17,6 +17,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-promise": "6",
-    "prettier": "^3.3.3"
+    "prettier": "^3.3.3",
+    "vite": "^6"
   }
 }

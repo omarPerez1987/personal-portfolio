@@ -1238,3 +1238,170 @@ footer .copyright span:last-child::after {
 #go-top a:hover {
   background: #000000;
 }
+
+/**
+ * ===================================================================
+ *  Toques 2026: código en la portada, stack sin porcentajes,
+ *  proyectos en la línea de tiempo y portadas de AGS Pro
+ * -------------------------------------------------------------------
+ */
+.accent-dot {
+  color: #ff0077;
+}
+
+.intro-content .intro-code {
+  display: table;
+  margin: 0 auto 4.2rem;
+  padding: 1rem 1.8rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #ffffff;
+  background: rgba(21, 21, 21, 0.72);
+  border-left: 3px solid #ff0077;
+  border-radius: 0 4px 4px 0;
+  text-shadow: none;
+}
+.intro-code-comment {
+  color: #ff5fa8;
+}
+.intro-caret {
+  display: inline-block;
+  width: 0.9rem;
+  height: 1.7rem;
+  margin-left: 0.4rem;
+  vertical-align: -0.3rem;
+  background: #ff0077;
+  animation: caret-blink 1.1s steps(1) infinite;
+}
+@keyframes caret-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.intro-info img {
+  border: 4px solid #ff0077;
+  box-shadow: 0 0 0 6px rgba(255, 0, 119, 0.12);
+}
+
+.about-content-profile p + p {
+  margin-top: -1.2rem;
+}
+
+.about-content-skills p {
+  margin-bottom: 3rem;
+}
+.stack-groups {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.stack-groups li {
+  margin-bottom: 2.2rem;
+}
+.stack-groups strong {
+  display: block;
+  margin-bottom: 0.8rem;
+  font-family: poppins;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: #313131;
+}
+.stack-groups span {
+  display: inline-block;
+  margin: 0 0.6rem 0.8rem 0;
+  padding: 0.3rem 1.2rem;
+  font-family: poppins;
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+  color: #313131;
+  border: 1px solid #313131;
+  border-radius: 999px;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+.stack-groups span:hover {
+  background: #ff0077;
+  border-color: #ff0077;
+  color: #ffffff;
+}
+
+.timeline-projects {
+  list-style: none;
+  margin: 1.8rem 0 0;
+  padding: 0;
+}
+.timeline-projects li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1.4rem;
+  color: #7d7d7d;
+}
+.timeline-projects li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.9rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  background: #ff0077;
+}
+.timeline-projects strong {
+  display: block;
+  font-family: poppins;
+  font-weight: 600;
+  color: #313131;
+}
+.timeline-projects .timeline-stack {
+  display: block;
+  margin-top: 0.4rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 1.2rem;
+  color: #ff5fa8;
+}
+
+#portfolio div.overlay {
+  cursor: default;
+}
+#portfolio .folio-stack {
+  display: block;
+  margin-top: 1rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 1.2rem;
+  color: #ff5fa8;
+}
+.portfolio-note {
+  margin-top: 4.2rem;
+  text-align: center;
+  font-family: lora, serif;
+  font-style: italic;
+  color: #7d7d7d;
+}
+.portfolio-note a,
+.contact-info a {
+  color: #ff0077;
+}
+.contact-info a:hover {
+  color: #ffffff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intro-caret {
+    animation: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .intro-content .intro-code {
+    font-size: 1.3rem;
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+  }
+  .stack-groups span {
+    margin-right: 0.3rem;
+  }
+}
